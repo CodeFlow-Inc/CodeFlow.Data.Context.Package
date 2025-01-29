@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<RootNamespace>CodeFlow.Data.Context.Package</RootNamespace>
+		<TargetFramework>net8.0</TargetFramework>
+		<PackageId>Data.Context.Package</PackageId>
+		<Authors>
+			CodeFlow, CodeFlow Contributors, Nicolas Buscarini
+		</Authors>
+		<Company>CodeFlow</Company>
+		<PackageDescription>A library for configuration start projects</PackageDescription>
+		<RepositoryUrl>https://github.com/CodeFlow-Inc/CodeFlow.Data.Context.Package</RepositoryUrl>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>Data.Context.Package</Title>
+		<Description>A library for configuration start projects</Description>
+		<AssemblyName>Data.Context.Package</AssemblyName>
+		<Nullable>enable</Nullable>
+		<PackageProjectUrl>https://github.com/CodeFlow-Inc</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>icon.jpeg</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\icon.jpeg">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.12" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.12" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.12" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.12" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.12" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Ardalis.Specification" Version="8.0.0" />
+		<PackageReference Include="Ardalis.Specification.EntityFrameworkCore" Version="8.0.0" />
+	</ItemGroup>
+
+</Project>
