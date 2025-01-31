@@ -11,7 +11,7 @@ namespace CodeFlow.Data.Context.Package.Base.Uow;
 /// <summary>
 /// Implements the Unit of Work pattern to manage transactions and database changes.
 /// </summary>
-public abstract class BaseUnitOfWork(BaseDbContext context) : IBaseUnitOfWork, IDisposable
+public abstract class BaseUnitOfWork(DbContext context) : IBaseUnitOfWork, IDisposable
 {
     private IDbContextTransaction? _currentTransaction;
     private bool _disposed;

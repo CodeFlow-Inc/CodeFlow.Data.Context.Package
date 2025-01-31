@@ -14,7 +14,7 @@ namespace CodeFlow.Data.Context.Package.Base.Repositories;
 
 public class BaseRepository<TEntity, TKey> : IBaseRepository<TEntity, TKey> where TEntity : class where TKey : struct
 {
-    public readonly BaseDbContext _context;
+    public readonly DbContext _context;
     public readonly ILogger<BaseRepository<TEntity, TKey>> _logger;
 
     /// <summary>
@@ -22,7 +22,7 @@ public class BaseRepository<TEntity, TKey> : IBaseRepository<TEntity, TKey> wher
     /// </summary>
     /// <param name="context">The application database context.</param>
     /// <param name="logger">The logger instance.</param>
-    protected BaseRepository(BaseDbContext context, ILogger<BaseRepository<TEntity, TKey>> logger)
+    protected BaseRepository(DbContext context, ILogger<BaseRepository<TEntity, TKey>> logger)
     {
         _context = context;
         _logger = logger;
